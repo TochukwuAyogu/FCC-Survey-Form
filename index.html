@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <div>
+      <form id="survey-form">
+        <label id="name-label"
+          >Name<br /><input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            value=""
+            required /></label
+        ><br /><br />
+        <label id="email-label"
+          >Email<br /><input
+            type="email"
+            id="email"
+            placeholder="Enter your Email"
+            value=""
+            required /></label
+        ><br /><br />
+        <label id="number-label"
+          >Age<br /><input
+            type="number"
+            id="number"
+            min="18"
+            max="130"
+            placeholder="Age"
+            value=""
+            required /></label
+        ><br /><br />
+        <select id="dropdown">
+          <p>Which option best describes your current role?</p>
+          <p>
+            <option>Select Current Role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+          </p></select
+        ><br /><br />
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <p></p>
+        <div class="radio">
+          <label
+            ><input
+              type="radio"
+              name="recommend"
+              value="referral"
+            />Definitely</label
+          ><br />
+          <label
+            ><input
+              type="radio"
+              name="recommend"
+              value="referral"
+            />Maybe</label
+          ><br />
+          <label
+            ><input type="radio" name="recommend" value="referral" />Not
+            sure</label
+          ><br />
+        </div>
+        <p>What is your favorite feature of freeCodeCamp?</p>
+        <select class="dropdown">
+          <option>Select an option</option>
+          <option>Challenges</option>
+          <option>Projects</option>
+          <option>Community</option>
+          <option>Open Source</option>
+        </select>
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <label
+          ><input type="checkbox" value="improved" />Front-end Projects</label
+        ><br />
+        <label
+          ><input type="checkbox" value="improved" />Back-end Projects</label
+        ><br />
+        <label
+          ><input type="checkbox" value="improved" />Data Visualization</label
+        ><br />
+        <label><input type="checkbox" value="improved" />Challenges</label
+        ><br />
+        <label
+          ><input type="checkbox" value="improved" />Open Source
+          Community</label
+        ><br />
+        <label
+          ><input type="checkbox" value="improved" />Gitter help rooms</label
+        ><br />
+        <label><input type="checkbox" value="improved" />Videos</label><br />
+        <label><input type="checkbox" value="improved" />City Meetups</label
+        ><br />
+        <label><input type="checkbox" value="improved" />Wiki</label><br />
+        <label><input type="checkbox" value="improved" />Forum</label><br />
+        <label
+          ><input type="checkbox" value="improved" />Additional courses</label
+        ><br /><br />
+        <label
+          >Any comments or suggestions?<br /><textarea
+            name="comments"
+            rows="5"
+            cols="50"
+          ></textarea></label
+        ><br /><br />
+
+        <label><input type="submit" id="submit" /></label>
+      </form>
+    </div>
+  </body>
+</html>
